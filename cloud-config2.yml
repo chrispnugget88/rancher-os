@@ -66,5 +66,5 @@ rancher:
     
   registry_auths:
     https://index.docker.io/v1/:
-      username: rancher
-      password: rancher
+      username: me
+      password: secret

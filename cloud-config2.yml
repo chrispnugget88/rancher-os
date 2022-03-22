@@ -44,12 +44,12 @@ rancher:
         vlans: 100
 
   services:
-    custom-service:
-      image: nginx
-      ports:
-        - "80:80"
-      labels:
-        io.rancher.os.scope: system # Remove to run in User Docker
+    rancher-agent:
+      image: rancher/agent:v0.8.2
+      command: http://<rancher-server-ip>:8080/v1/projects/1a5/scripts/<registrationToken>
+      privileged: true
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
         
   docker:
     registry_mirror: "https://mirror.gcr.io"

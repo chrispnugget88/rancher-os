@@ -1,5 +1,5 @@
 #cloud-config
-hostname: host-0815
+hostname: rancherosvm
 ssh_authorized_keys:
   - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHzc4sKS9cCvOFkJNG/JxBYVoFLJVBny3Zqmo0ubmGK0PCoakwwARA9hv6/y2nL67jiWMdderf2bp4FiU0CLEIsDyZfOOUMlUZbCo6Bipv6O75KGYxtUPh8JOdyqONRLfi0qeS6hEHsdVy3dpqyFWlUqcBLsq9boGwNmyirhyfIgkCEF2ljNYLOfGcSW/0QdUFUmdSWjdaBHcwMoDhp2bGtO9NrIvZ5OOVWCloiHRcMAzPK1JXei7j+MEHXsIZZzdgA/pcje6hGedqOQ0GT3/jc4iVCQje2/tgYtNgm40pzDNaErZ3JpflYhsf1unLQECM3ulxsSaB65KYUQKsZmLk/b1KGZLWCcOEbA+ov4adaU3+pziBZMSKUBu7P79kABBzelYiIdyfGtwedui/BcigcCo0srIuSvHJa2vz8cSXQkq4ysBoWIu7ZU/9eVdn3TdJ7OYqxDV1GFjdrlEi7W2TIanMnvx9QRH8PDH+co/nYML8PC6vh8LBPnQjtbM+hTM= Katrina@katrinas-MacBook-Pro.local
   
@@ -66,5 +66,5 @@ rancher:
     
   registry_auths:
     https://index.docker.io/v1/:
-      username: me
-      password: secret
+      username: rancher
+      password: rancher

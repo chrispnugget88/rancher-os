@@ -36,20 +36,20 @@ rancher:
     interfaces:
       eth0:
         dhcp: true
-      eth1:
-        dhcp: false
-        address: 172.68.0.69/24
-        gateway: 172.68.0.1
-        mtu: 1500
-        vlans: 100
+#       eth1:
+#         dhcp: false
+#         address: 172.68.0.69/24
+#         gateway: 172.68.0.1
+#         mtu: 1500
+#         vlans: 100
 
   services:
-    rancher-agent:
-      image: rancher/agent:v0.8.2
-      command: http://<rancher-server-ip>:8080/v1/projects/1a5/scripts/<registrationToken>
-      privileged: true
-      volumes:
-        - /var/run/docker.sock:/var/run/docker.sock
+#     rancher-agent:
+#       image: rancher/agent   # default tag v0.8.2
+#       command: http://<rancher-server-ip>:8080/v1/projects/1a5/scripts/<registrationToken>
+#       privileged: true
+#       volumes:
+#         - /var/run/docker.sock:/var/run/docker.sock
         
   docker:
     registry_mirror: "https://mirror.gcr.io"

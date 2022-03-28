@@ -35,12 +35,12 @@ rancher:
         - 1.0.0.1
       override: true # Override DHCP assigned nameservers
     interfaces:
+#       eth0:
+#         dhcp: true
       eth0:
-        dhcp: true
-#       eth1:
-#         dhcp: false
-#         address: 172.68.0.69/24
-#         gateway: 172.68.0.1
+        dhcp: false
+        address: 172.68.0.69/24
+        gateway: 172.68.0.1
 #         mtu: 1500
 #         vlans: 100
 

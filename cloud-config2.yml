@@ -27,6 +27,7 @@ write_files:
       -----END CERTIFICATE-----
 
 rancher:
+  console: ubuntu
   network:
     dns:
       nameservers:

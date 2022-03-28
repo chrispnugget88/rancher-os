@@ -44,7 +44,7 @@ rancher:
 # #         mtu: 1500
 # #         vlans: 100
 
-  services:
+#  services:
 #     rancher-agent:
 #       image: rancher/agent   # default tag v0.8.2
 #       command: http://<rancher-server-ip>:8080/v1/projects/1a5/scripts/<registrationToken>
